@@ -61,7 +61,7 @@ public:
     }
 };
 
-// Termnal Colors.
+// Termnal Colors
 std::string termc(std::string color)
 {
     if (color == "black") { return "\033[30m"; }
@@ -75,7 +75,7 @@ std::string termc(std::string color)
     else { return "\033[30m"; }
 }
 
-// Get INT Function.
+// Get INT Function
 int gint(std::string message)
 {
     if (message != "")
@@ -88,7 +88,7 @@ int gint(std::string message)
     return temp_int;
 }
 
-// Get STRING Function.
+// Get STRING Function
 std::string gstr(std::string message)
 {
     if (message != "")
@@ -101,7 +101,7 @@ std::string gstr(std::string message)
     return temp_str;
 }
 
-// Get INT Function with print.
+// Get INT Function with print
 int gintwp(std::string message)
 {
     if (message != "")
@@ -115,7 +115,7 @@ int gintwp(std::string message)
     return temp_int;
 }
 
-// Get STRING Function with print.
+// Get STRING Function with print
 std::string gstrwp(std::string message)
 {
     if (message != "")
@@ -130,7 +130,7 @@ std::string gstrwp(std::string message)
     return temp_str;
 }
 
-// Change Two Numbers Function.
+// Change Two Numbers Function
 template <class mv>
 void mvdata(mv& a, mv& b)
 {
@@ -139,21 +139,21 @@ void mvdata(mv& a, mv& b)
     b = temp;
 }
 
-// Print Line Function.
+// Print Line Function
 template <class prlnType>
 void prln(prlnType data)
 {
     std::cout << data << std::endl;
 }
 
-// Print Function.
+// Print Function
 template <class prType>
 void pr(prType data)
 {
     std::cout << data;
 }
 
-// Clear Function.
+// Clear Function
 void clear(std::string system_name)
 {
     if (system_name == "win" || system_name == "windows" || system_name == "Windows")
@@ -170,11 +170,11 @@ void clear(std::string system_name)
     }
 }
 
-// Print Array Function.
+// Print Array Function
 template <class prarrType>
 void prarr(prarrType array[], int size)
 {
-    std::cout << "[escpplib] ====INDEX====DATA===================== [Made With \u2764!]" << std::endl;
+    std::cout << "[pmicpp] ====INDEX====DATA===================== [Made With \u2764!]" << std::endl;
 
 	for (int i = 0; i < size; i++)
 	{
